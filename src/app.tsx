@@ -1,9 +1,11 @@
+import { RouterProvider } from "react-router";
 import ReactQueryProvider from "./providers/reactQuery";
+import { router } from "./router";
 
 export default function App() {
   return (
     <ReactQueryProvider>
-      <div>آسان دارو</div>
+      <RouterProvider router={router} />
     </ReactQueryProvider>
   );
 }
