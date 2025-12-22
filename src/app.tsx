@@ -1,3 +1,9 @@
+import ReactQueryProvider from "./providers/reactQuery";
+
 export default function App() {
-  return <div>آسان دارو</div>;
+  return (
+    <ReactQueryProvider>
+      <div>آسان دارو</div>
+    </ReactQueryProvider>
+  );
 }
