@@ -4,9 +4,11 @@ import { Outlet } from "react-router";
 
 export default function MainLayout() {
   return (
-    <div>
+    <div className="flex flex-col min-h-svh">
       <Header />
-      <Outlet />
+      <main className="flex-1">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
