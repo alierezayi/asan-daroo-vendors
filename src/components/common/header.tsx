@@ -7,7 +7,7 @@ import MobileNavLinks from "./mobileNavLinks";
 
 export default function Header() {
   return (
-    <header className="container h-16 flex items-center justify-between fixed top-0 inset-x-0">
+    <header className="container h-16 flex items-center justify-between gap-10 fixed top-0 inset-x-0 z-50 backdrop-blur-lg bg-white/5">
       <div className="flex items-center gap-4">
         {/* mobile nav links */}
         <MobileNavLinks />
@@ -35,7 +35,7 @@ export default function Header() {
           asChild
         >
           <Link to="/cart">
-            <ShoppingCartIcon />
+            <ShoppingCartIcon className="size-5" />
           </Link>
         </Button>
         <Button variant="outline" size="lg" asChild>
